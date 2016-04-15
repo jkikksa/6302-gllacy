@@ -1,0 +1,18 @@
+{
+  "name": "gllacy-project",
+  "version": "1.0.0",
+  "description": "gllacy-project from htmlacademy.ru",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkikksa/6302-gllacy.git"
+  },
+  "author": "Dmitry Rusakov",
+  "license": "ISC",
+  "homepage": "https://github.com/jkikksa/6302-gllacy#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
