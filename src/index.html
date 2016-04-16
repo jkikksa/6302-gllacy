@@ -8,11 +8,11 @@
 <!--  font-family: 'Roboto', sans-serif;-->
 </head>
 <body>
-  <div class="page-wrapper">
+  <div class="index-wrapper">
     <header class="main-header">
       <div class="main-header__inner">
-        <div class="page-logo">
-          <img src="http://placehold.it/154x64" alt="Logo" width="154" height="64" title="Gllacy Shop">
+        <div class="logo">
+          <img src="#" alt="Logo" width="154" height="64" title="Gllacy Shop">
         </div>
         <nav class="main-menu">
           <ul>
@@ -20,7 +20,7 @@
               <a href="#">Каталог</a>
               <ul class="main-menu__submenu">
                 <li><a href="#">Новинки</a></li>
-                <li><a href="#">Сливочное</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
@@ -47,7 +47,7 @@
         </div>
       </div>
     </header>
-    <section class="banners">
+    <div class="banners">
       <div class="banners__inner">
         <section class="banners__item">
           <h2 class="banners__item-title">
@@ -74,32 +74,46 @@
           </div>
         </section>
       </div>
-    </section>
+    </div>
     <section class="hits">
       <div class="hits__inner">
         <ul>
           <li class="hits__item">
-            <div class="hits__item-price">310 &#8381;&#47;кг</div>
-            <a href="#" class="hits__item-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <div class="product-card product-card--hit">
+              <img src="#" alt="#" class="product-card__image" width="200" height="200">
+              <div class="product-card__price">310 &#8381;&#47;кг</div>
+              <a href="#" class="product-card__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            </div>
           </li>
           <li class="hits__item">
-            <div class="hits__item-price">380 &#8381;&#47;кг</div>
-            <a href="#" class="hits__item-link">Сливочно-кофейное с кусочками шоколада</a>
+            <div class="product-card product-card--hit">
+              <img src="#" alt="#" class="product-card__image" width="200" height="200">
+              <div class="product-card__price">380 &#8381;&#47;кг</div>
+              <a href="#" class="product-card__link">Сливочно-кофейное с кусочками шоколада</a>
+            </div>
           </li>
           <li class="hits__item">
-            <div class="hits__item-price">355 &#8381;&#47;кг</div>
-            <a href="#" class="hits__item-link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <div class="product-card product-card--hit">
+              <img src="#" alt="#" class="product-card__image" width="200" height="200">
+              <div class="product-card__price">355 &#8381;&#47;кг</div>
+              <a href="#" class="product-card__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </div>
           </li>
           <li class="hits__item">
-            <div class="hits__item-price">415 &#8381;&#47;кг</div>
-            <a href="#" class="hits__item-link">Сливочное крем-брюле с карамельной подливкой</a>
+            <div class="product-card product-card--hit">
+              <img src="#" alt="#" class="product-card__image" width="200" height="200">
+              <div class="product-card__price">415 &#8381;&#47;кг</div>
+              <a href="#" class="product-card__link">Сливочное крем-брюле с карамельной подливкой</a>
+            </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="features">
       <div class="features__inner">
-        <h2 class="features__title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+        <h2 class="features__title">
+          Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+        </h2>
         <ul>
           <li>
             <p class="features__item-text">
@@ -116,7 +130,7 @@
           <li>
             <p class="features__item-text">
               Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
+              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
             </p>
           </li>
           <li>
@@ -133,7 +147,7 @@
         <h3 class="blog-news__title">
           Новое в нашем блоге
         </h3>
-        <a href="#" class="blog-news__link-to-post">
+        <a href="#" class="blog-news__link">
           10  способов сервировки фруктовых щербетов к столу
         </a>
       </article>
@@ -142,14 +156,14 @@
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой не нужной ерунды. Честно &#61;&#41;
         </p>
-        <form action="#" method="get" class="subsribe__form">
+        <form class="subsribe__form" action="#" method="get">
           <input type="email" name="email" id="email" placeholder="Электронная почта">
           <input type="submit" value="Отправить">
         </form>
       </article>
     </div>
     <div class="map">
-      
+<!--    Тут будет код карты-->
     </div>
     <article class="contacts">
       <p>
@@ -160,32 +174,34 @@
       </p>
       <p>
         Для заказов по телефону:<br>
-        8 812 450-25-25<br>
+        <a href="tel:+78124502525">
+          8 812 450-25-25
+        </a><br>
         (с 10 до 20 ежедневно)
       </p>
       <a href="#" class="contacts__link">
         Форма обратной связи
       </a>
     </article>
-    <div class="footer">
-      <div class="footer__inner">
-        <section class="footer__social">
-          <a href="#" class="footer__social-link footer__social-link--twitter">Twitter</a>
-          <a href="#" class="footer__social-link footer__social-link--instagram">Instagram</a>
-          <a href="#" class="footer__social-link footer__social-link--facebook">Facebook</a>
-          <a href="#" class="footer__social-link footer__social-link--vk">Vkontakte</a>
+    <footer class="main-footer">
+      <div class="main-footer__inner">
+        <section class="main-footer__social">
+          <a href="#" class="main-footer__social-link main-footer__social-link--twitter">Twitter</a>
+          <a href="#" class="main-footer__social-link main-footer__social-link--instagram">Instagram</a>
+          <a href="#" class="main-footer__social-link main-footer__social-link--facebook">Facebook</a>
+          <a href="#" class="main-footer__social-link main-footer__social-link--vk">Vkontakte</a>
         </section>
-        <section class="footer__links">
-          <a href="#" class="footer__link-item">Для поставщиков</a>
-          <a href="#" class="footer__link-item">Наши документы</a>
-          <a href="#" class="footer__link-item">О производстве</a>
-          <a href="#" class="footer__link-item">Экологические стандарты</a>
+        <section class="main-footer__links">
+          <a href="#" class="main-footer__link-item">Для поставщиков</a>
+          <a href="#" class="main-footer__link-item">Наши документы</a>
+          <a href="#" class="main-footer__link-item">О производстве</a>
+          <a href="#" class="main-footer__link-item">Экологические стандарты</a>
         </section>
-        <section class="copyright">
+        <section class="main-footer__copyright">
           <p>Сделано в <a href="//htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
         </section>
       </div>
-    </div>
+    </footer>
   </div>
 </body>
 </html>
