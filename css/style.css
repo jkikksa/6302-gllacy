@@ -450,6 +450,9 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
 }
+body * {
+  max-height: 999999px;
+}
 h1 {
   font-weight: 700;
   font-size: 35px;
@@ -1362,6 +1365,8 @@ button:active {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+
+  border-radius: 0;
 }
 .catalog-title {
   margin-top: 0;
@@ -1463,7 +1468,9 @@ button:active {
   padding-left: 15px;
 }
 .filters__fatness input[type="radio"] {
-  display: none;
+  position: absolute;
+
+  opacity: 0;
 }
 .filters__fatness label {
   position: relative;
@@ -1483,6 +1490,7 @@ button:active {
 
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2220.25%22%20height%3D%2220.25%22%20viewBox%3D%220%200%2020.25%2020.25%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23f8f7f4%3Bfill-rule%3Aevenodd%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M10.121.005c5.586%200%2010.115%204.528%2010.115%2010.114%200%205.587-4.529%2010.116-10.115%2010.116S.006%2015.706.006%2010.119C.006%204.533%204.535.005%2010.121.005zm0%201.248a8.867%208.867%200%201%201%200%2017.734%208.867%208.867%200%200%201%200-17.734z%22%20class%3D%22cls-1%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 .filters__fatness label:last-child {
   margin-right: 0;
@@ -1495,7 +1503,9 @@ button:active {
   padding-left: 16px;
 }
 .filters__fillers input[type="checkbox"] {
-  display: none;
+  position: absolute;
+
+  opacity: 0;
 }
 .filters__fillers label {
   position: relative;
@@ -1516,6 +1526,7 @@ button:active {
 
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23fff%3Bfill-rule%3Aevenodd%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M4.146.014h11.708a4.16%204.16%200%200%201%204.16%204.16v11.651a4.16%204.16%200%200%201-4.16%204.161H4.146a4.161%204.161%200%200%201-4.161-4.161V4.174A4.16%204.16%200%200%201%204.146.014zM4%201h12a3%203%200%200%201%203%203v12a3%203%200%200%201-3%203H4a3%203%200%200%201-3-3V4a3%203%200%200%201%203-3z%22%20class%3D%22cls-1%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 .filters__fillers label:last-child {
   margin-right: 0;
