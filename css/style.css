@@ -2085,12 +2085,17 @@ input[type="checkbox"]:disabled ~ label:hover::before {
   background-color: #f8f7f4;
 }
 .map {
-  position: relative;
-
   height: 429px;
 
   background-color: #f1ead2;
   background-image: url("../img/image_map.jpg");
+}
+.map__inner {
+  position: relative;
+
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .contacts {
   position: absolute;
