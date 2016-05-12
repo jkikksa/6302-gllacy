@@ -921,6 +921,7 @@ button:active {
 }
 .user-block__search-link:hover {
   border-bottom: none;
+  cursor: pointer;
 }
 .user-block__login-link {
   display: block;
@@ -937,6 +938,7 @@ button:active {
 }
 .user-block__login-link:hover {
   border-bottom: none;
+  cursor: pointer;
 }
 .user-block__cart-link {
   display: block;
@@ -962,6 +964,8 @@ button:active {
 }
 .user-block__cart-link--empty:hover {
   color: #ffffff;
+
+  cursor: default;
 }
 .user-block__cart-link--with-goods {
   color: #323232;
@@ -972,7 +976,7 @@ button:active {
 .user-block__cart-link--with-goods:hover {
   color: #323232;
 
-  cursor: default;
+  cursor: pointer;
 }
 .user-block__search:hover .user-block__search-form {
   display: block;
@@ -1365,8 +1369,6 @@ button:active {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
-
-  border-radius: 0;
 }
 .catalog-title {
   margin-top: 0;
@@ -1480,6 +1482,9 @@ button:active {
 
   line-height: 22px;
 }
+.filters__fatness label:hover {
+  cursor: pointer;
+}
 .filters__fatness label::before {
   content: "";
   position: absolute;
@@ -1515,6 +1520,9 @@ button:active {
 
   line-height: 22px;
   text-transform: lowercase;
+}
+.filters__fillers label:hover {
+  cursor: pointer;
 }
 .filters__fillers label::before {
   content: "";
