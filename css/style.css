@@ -2089,6 +2089,8 @@ input[type="checkbox"]:disabled ~ label:hover::before {
 
   background-color: #f1ead2;
   background-image: url("../img/image_map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .map__inner {
   position: relative;
