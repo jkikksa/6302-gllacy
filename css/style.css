@@ -569,6 +569,8 @@ input[type="search"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font-weight: 400;
   color: #999999;
+
+  opacity: 1;
 }
 input[type="text"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder,
@@ -576,6 +578,8 @@ input[type="search"]::-moz-placeholder,
 textarea::-moz-placeholder {
   font-weight: 400;
   color: #999999;
+
+  opacity: 1;
 }
 input[type="text"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder,
@@ -583,6 +587,8 @@ input[type="search"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   font-weight: 400;
   color: #999999;
+
+  opacity: 1;
 }
 input[type="text"]::placeholder,
 input[type="password"]::placeholder,
@@ -590,6 +596,8 @@ input[type="search"]::placeholder,
 textarea::placeholder {
   font-weight: 400;
   color: #999999;
+
+  opacity: 1;
 }
 img {
   width: 100%;
@@ -1483,6 +1491,8 @@ button:active {
 .filters__fatness {
   padding-right: 19px;
   padding-left: 15px;
+
+  white-space: nowrap;
 }
 .filters__fatness input[type="radio"] {
   position: absolute;
@@ -1521,6 +1531,8 @@ button:active {
 .filters__fillers {
   padding-right: 26px;
   padding-left: 16px;
+
+  white-space: nowrap;
 }
 .filters__fillers input[type="checkbox"] {
   position: absolute;
@@ -2134,7 +2146,7 @@ input[type="checkbox"]:disabled ~ label:hover::before {
 }
 .contacts__adress {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 .contacts__phone {
   margin-bottom: 30px;
